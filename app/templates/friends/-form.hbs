@@ -1,4 +1,10 @@
+<h1>Freinds details</h1>
+<p>{{model.firstName}}</p>
+<p>{{model.lastName}}</p>
+<p>{{model.email}}</p>
+<p>{{model.twitter}}</p>
 <form {{action "save" on="submit"}}>
+    <h2>{{errorMessage}}</h2>
     <p>
         <label>First name:
             {{input value=model.firstName}}
