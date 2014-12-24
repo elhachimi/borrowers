@@ -14,7 +14,6 @@ export default Ember.Controller.extend({
 } ),
   actions:{
     save: function(){
-      console.log(this.get('isValid'));
       if (this.get('isValid')) {
         var _this = this;
         this.get('model').save().then(function(friend){

@@ -8,9 +8,9 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.resource('friends', function() {
     this.route('new');
-    this.route('show', {path: ':freind_id'})
+    this.route('show', {path: ':friend_id'});
+    this.route('edit', {path: ':friend_id/edit'});
   });
-  this.route('friends/show');
 });
 
 export default Router;
