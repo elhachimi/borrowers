@@ -1,3 +1,11 @@
-html, body {
-  margin: 20px;
+body {
+    display: block;
+    text-align: center;
+    background: #FFF;
+    color: #333;
+    width: 100%;
+    margin: 80px auto;
+}
+table {
+    width: 100%;
 }

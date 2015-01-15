@@ -1,30 +1,11 @@
-<h1>Freinds details</h1>
-<p>{{model.firstName}}</p>
-<p>{{model.lastName}}</p>
-<p>{{model.email}}</p>
-<p>{{model.twitter}}</p>
 <form {{action "save" on="submit"}}>
-    <h2>{{errorMessage}}</h2>
-    <p>
-        <label>First name:
-            {{input value=model.firstName}}
-        </label>
-    </p>
-    <p>
-        <label>Last name:
-            {{input value=model.lastName}}
-        </label>
-    </p>
-    <p>
-        <label>Email:
-            {{input value=model.email}}
-        </label>
-    </p>
-    <p>
-        <label>Twitter:
-            {{input value=model.twitter}}
-        </label>
-    </p>
+  <h2>{{errorMessage}}</h2>
+  <fieldset>
+    {{input value=model.firstName placeholder='First Name'}}
+    {{input value=model.lastName placeholder='Last Name'}}
+    {{input value=model.email placeholder='Email'}}
+    {{input value=model.twitter placeholder='Twitter'}}
     <input type="submit" value="save">
     <button {{action "cancel"}}>Cancel</button>
+  </fieldset>
 </form>
